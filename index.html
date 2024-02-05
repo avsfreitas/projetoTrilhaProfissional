@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilha Profissional</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Desafio dia 03</h1>
+        <div id="telaConversa">
+            <div id="contato">
+                <img src="assets/iconeFeminino.png" alt="Icone de uma mulher">
+                <h2><strong>Best S2</strong> Online</h2>
+            </div>
+            <div id="container">
+                <div id="perguntaArea">
+                   <h4>Qual área você deseja seguir, Front-End ou Back-End?</h4>
+                   <div class="botoes">
+                    <button onclick="clicouBotao('Front-End')" id="botaoFrontEnd">Front-End</button>
+                    <button onclick="clicouBotao('Back-End')" id="botaoBackEnd">Back-End</button>
+                </div>
+                </div>
+                <h4 id="respostaArea"></h4>
+                <div id="perguntaEspecializacao">
+                   <h4>Você irá se especializar na sua área ou pretende se tornar Fullstack?</h4>
+                   <div class="botoes">
+                       <button onclick="clicouBotao('Especialização')" id="botaoEspecializacao">Especialização</button>
+                       <button onclick="clicouBotao('FullStack')" id="botaoFullStack">FullStack</button>
+                   </div>
+                </div>
+                <h4 id="respostaEspecializacao"></h4>
+                <div id="perguntaTecnologia">
+                    <h4>Tem mais alguma tecnologia que você deseja aprender?</h4>
+                    <div class="botoes">
+                        <button onclick="clicouBotao('Sim')" id="botaoSim">Sim</button>
+                        <button onclick="clicouBotao('Não')" id="botaoNao">Não</button>
+                    </div>
+                </div>
+                <h4 id="respostaTecnologia">Sim</h4>
+                <div id="qualTecnologia">
+                    <h4>Quais? Digite até 4 tecnologias</h4>
+                </div>
+                <h4 id="respostaQualTecnologia"></h4>
+                <h4 id="respostaBest"></h4>
+                <div id="enviar">
+                    <input type="text" name="respostas" id="respostas" onclick="habilitarEnviar()"></div>
+                    <button id="botaoEnviar" onclick="enviarResposta()" disabled>Enviar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por <strong>Amanda Freitas</strong></p>
+    </footer>
+</body>
+</html>
